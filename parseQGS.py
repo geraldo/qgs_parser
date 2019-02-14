@@ -67,8 +67,6 @@ def layertree(node):
 		
 		layer = project.mapLayer(node.layerId())
 
-		aliases = layer.attributeAliases()
-
 		if obj['indentifiable']:
 			for index in layer.attributeList():
 				if layer.editorWidgetSetup(index).type() != 'Hidden':
